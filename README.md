@@ -28,7 +28,7 @@ Elegant and deadly as a dark-lady. This short shell script replicates itself unt
 
 Do you remember `format C:` of the old DOS? this have the same result.
 
-### Writes Directly to a Hard Drive
+### Write in the Wrong Place
 
 `date > /dev/sda`
 
@@ -57,9 +57,9 @@ This command will move all your personal data in the Linux equivalent of a Black
 `rm -f /usr/sbin/busybox`
 
 ## Learned Lessons
-* excute a command with root privileges only if it is strictly necessary
-* beware from rm -r commands
-* never handle partions handles (such as /dev/sda1)
+* execute commands with root privileges only if it is strictly necessary
+* beware from `rm -r` commands
+* never handle partions handles (such as `/dev/sda1`)
 * never execute untrusted content
 
 
