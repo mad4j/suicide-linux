@@ -28,7 +28,7 @@ Elegant and deadly as a dark-lady. This short shell script replicates itself unt
 
 Do you remember `format C:` of the old DOS? this have the same result.
 
-### Write in the Wrong Place
+### Right Time, but Wrong Place
 
 `date > /dev/sda`
 
