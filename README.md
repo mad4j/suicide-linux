@@ -40,9 +40,11 @@ Redirecting will write raw bytes on your disk partition. What can never will be?
 `dd if=/dev/random of=/dev/sda`
 
 
-## Moves Your Home Directory to a Black Hole
+## The Black Hole
 
 `mv ~ /dev/null`
+
+This command will move all your personal data in the Linux equivalent of a Black Hole.
 
 
 ## Downloads and Runs a Script
