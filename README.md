@@ -40,7 +40,7 @@ Redirecting will write raw bytes on your disk partition. What can never will be?
 `dd if=/dev/random of=/dev/sda`
 
 
-## The Black Hole
+## Have to start again
 
 `mv ~ /dev/null`
 
