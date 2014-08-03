@@ -56,7 +56,7 @@ This command will move all your personal data in the Linux equivalent of a Black
 
 `rm -f /usr/sbin/busybox`
 
-## Learned Lessons
+## Lessons Learned
 * execute commands with root privileges only if it is strictly necessary
 * beware from `rm -r` commands
 * never handle partions handles (such as `/dev/sda1`)
