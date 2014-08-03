@@ -52,7 +52,7 @@ Redirecting will write raw bytes on your disk partition. What can never will be?
 
 ## You will be no more busy
 
-`rm /usr/sbin/busybox`
+`rm -f /usr/sbin/busybox`
 
 
 ## References
