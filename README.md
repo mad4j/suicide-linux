@@ -1,4 +1,4 @@
-Deadly Linux
+Suicide Linux
 ============
 
 *Simple list of deadly linux commands. All the Linux that nobody will teach you, but that you will experience in first person. At least one time in your life.*
