@@ -35,7 +35,7 @@ Do you remember `format C:` of the old DOS? this have the same result.
 Redirecting will write raw bytes on your disk partition. What can never will be? nothing good! surely.
 
 
-## Writes Junk Onto a Hard Drive
+## Collect Junk is a Dirty Job
 
 `dd if=/dev/random of=/dev/sda`
 
