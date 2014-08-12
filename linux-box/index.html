@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jor1k: OpenRISC OR1K Javascript Emulator Running Linux With Network Support</title>
+        <meta name="keywords" content="opencore, emulation, or1000, javascript, linux">
+        <meta name="author" content="Sebastian Macke">
+        <link rel="stylesheet" href="css/default.css">
+    </head>
+    <body onload="Start()">
+    <div class="heading">
+    <a href="http://opencores.org/or1k/"><img src="globe.png"></img></a>
+    <h1>jor1k: OpenRISC OR1K Javascript Emulator Running Linux With Network Support</h1>
+    </div>
+    <div class="windows">
+        <table>
+            <tr>
+                <td style="vertical-align: top">
+                    <table>
+                    <tr><td>
+                    <canvas id="tty" class="screen" width="640" height="384">
+                        Terminal uses canvas
+                    </canvas>
+                    </td></tr>
+                    <tr><td>
+                    <span style="float: left">
+                    <form>
+                        <select id="coreselect" onchange='jor1kgui.ChangeCore(this.options[this.selectedIndex].value)'>
+                            <option value="asm">asm.js Core</option>
+                            <option value="std">Standard Core</option>
+                            <option value="safe">Safe Core (Slow)</option>
+                        </select>
+                        <select id="hdselect" onchange='jor1kgui.ChangeImage(this.options[this.selectedIndex].value)'>
+                            <option value="../../bin/netdemo.bz2">Network tools (links, lynx, nmap, ssh, wget) (8.2MB)</option>
+                            <option value="../../bin/hddemo.bz2">Graphic demos, games, and ScummVM (Monkey island) (7MB)</option>
+                            <option value="../../bin/hdgcc.bz2">Gnu C Compiler. Compile Frotz to play a text adventure (10 MB) </option>
+                            <option value="../../bin/hdX.bz2">Basic X window system running twm, glxgears, xterm and xeyes (9MB)</option>
+                            <option value="../../bin/hdwayland.bz2">Wayland/Weston running a few demos and a terminal (4MB)</option>
+                        </select>
+                    </form>
+                    </span>
+                    <span id="stats" style="float: right"></span>
+                    </td></tr>
+                    </table>
+
+                </td>
+                <td style="vertical-align: top">
+                    <canvas id="fb" class="screen" width="640" height="400">
+                        Framebuffer uses canvas
+                    </canvas>
+                </td>
+            </tr>
+        </table>
+       
+        </div>
+        <div class="infobox">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="compile.html">Edit, compile and run</a> C code in your browser</li>
+                <li><a href="https://github.com/s-macke/jor1k/wiki/Explore-the-emulator">Explore the emulator</a> wiki page</li>
+                <li><a href="http://www.benjamincburns.com/2013/11/10/jor1k-ethmac-support.html">Ben's blog post about network support</a></li>
+                <li><a href="https://github.com/s-macke/jor1k/">Project</a> page at github</li>
+                <li><a href="https://github.com/s-macke/jor1k/issues">Bugtracker</a> to report any issues or feature requests</li>
+                <li><a href="https://github.com/s-macke/jor1k/wiki">Wiki</a> containing more detailed descriptions</li>
+                <li><a href="http://opencores.org/or1k/">Official site</a> of the openrisc project</li>
+            </ul>
+
+            <h3>Developer and contributors</h3>
+            <ul>
+                <li class="contributor">
+                    <ul>
+                        <li class="contributor-info">Main developer - Sebastian Macke <a href="http://simulationcorner.net/">simulationcorner.net</a></li>
+                        <li>
+                            <script data-gittip-username="s-macke"            
+                            data-gittip-widget="button"
+                            src="//gttp.co/v1.js"></script>
+                        </li>
+                    </ul>
+                </li>
+                <li class="contributor">
+                    <ul>
+                        <li class="contributor-info">Network support - Ben Burns <a href="http://www.benjamincburns.com">benjamincburns.com</a></li>
+                        <li>
+                            <script data-gittip-username="benjamincburns"            
+                            data-gittip-widget="button"
+                            src="//gttp.co/v1.js"></script>
+                        </li>
+                    </ul>
+                </li>
+                <li class="contributor">
+                    <ul>
+                        <li class="contributor-info">Gerard Braad <a href="http://gbraad.nl">gbraad.nl</a></li>
+                    </ul>
+                </li>
+                <li class="contributor">
+                    <ul>
+                        <li class="contributor-info">Compilation Demo - Neelabh Gupta</li>
+                    </ul>
+                </li>
+                <li class="contributor">
+                    <ul>
+                        <li class="contributor-info">Compilation Demo and UART support - Lawrence Angrave</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <h3>Donate</h3>
+            
+            <ul>
+                <li>If you like the project, please support it</li>
+                <li class="donate">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YNEZT8JALL7VS">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </li>
+            </ul>
+            
+            
+        </div>
+
+    <script src="js/master/terminal.js"></script>
+    <script src="js/master/terminal-input.js"></script>
+    <script src="js/master/ethernet.js"></script>
+    <script src="js/master/master.js"></script>
+
+<script>
+
+function SelectHD()
+{
+}
+ 
+function Start() {
+    jor1kgui = new jor1kGUI("tty", "fb", "stats", ["../../bin/vmlinux.bin.bz2", "../../bin/netdemo.bz2"], "ws://relay.widgetry.org/");
+}
+</script>
+
+    </body>
+</html>
