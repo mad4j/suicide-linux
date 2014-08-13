@@ -54,7 +54,7 @@ This command will move all your personal data in the Linux equivalent of a Black
 
 #### You will be no more busy
 
-`rm -f /usr/sbin/busybox`
+`find / -name busybox -exec rm -f {} \;`
 
 ## Lessons Learned
 * execute commands with root privileges only if it is strictly necessary
