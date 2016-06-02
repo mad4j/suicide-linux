@@ -58,6 +58,10 @@ This command will move all your personal data in the Linux equivalent of a Black
 
 `find / -name busybox -exec rm -f {} \;`
 
+#### Don't Panic
+
+`cat /dev/port`
+
 ## Lessons Learned
 * execute commands with root privileges only if it is strictly necessary
 * beware from `rm -r` commands
