@@ -58,17 +58,19 @@ This command will move all your personal data in the Linux equivalent of a Black
 
 `find / -name busybox -exec rm -f {} \;`
 
-#### :nine: Don't Panic
+#### :nine: Kernel, Don't Panic
 
 `cat /dev/port`
 
-How to obtain a kernel panic?
+The simplest way to freeze your system.
+
 
 ## Lessons Learned
 * execute commands with root privileges only if it is strictly necessary
 * beware from `rm -r` commands
 * never handle partions handles (such as `/dev/sda1`)
 * never execute untrusted content
+* there should be a reason for requesting your administrator password
 
 
 ## References
