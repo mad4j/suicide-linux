@@ -6,7 +6,7 @@
 Some of these commands need administration rights (e.g. sudo ...) to be executed, some Linux distributions enforce specific protection mechanisms. So it is not so simple to destroy your Linux machine, but pay attention in any case. 
 
 ## :warning: Warning!! :warning:
-Most of the commands in this tutorial are **really dangerous**!!!
+> Most of the commands in this tutorial are **really dangerous**!!!
 DO NOT use these commands on a real system if you have no idea of what you are going to do.
 
 
