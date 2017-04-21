@@ -24,7 +24,7 @@ With this command you asking to delete every files in your disk. Your only hope 
 Elegant and deadly as a dark-lady. This short shell script replicates itself until all the processing capabilities of your computer will be occupied. Shutdown and restart seems to be the only solution.
 
 
-#### Format the Drive
+#### Tabula rasa
 
 `mkfs.ext4 /dev/sda1`
 
