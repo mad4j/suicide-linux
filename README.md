@@ -61,6 +61,7 @@ This command will move all your personal data in the Linux equivalent of a Black
 #### :nine: Don't Panic
 
 `cat /dev/port`
+
 How to obtain a kernel panic?
 
 ## Lessons Learned
