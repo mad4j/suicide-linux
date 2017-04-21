@@ -5,7 +5,7 @@
 
 Some of these commands need administration rights (e.g. sudo ...) to be executed, some Linux distributions enforce specific protection mechanisms. So it is not so simple to destroy your Linux machine, but pay attention in any case. 
 
-## :warning: Warning!!
+## :warning: Warning!! :warning:
 Most of the commands in this tutorial are **really dangerous**!!!
 DO NOT use these commands on a real system if you have no idea of what you are going to do.
 
@@ -70,7 +70,7 @@ The simplest way to freeze your system.
 * beware from `rm -r` commands
 * never handle partions handles (such as `/dev/sda1`)
 * never execute untrusted content
-* there should be a reason for requesting your administrator password
+* there should be a good reason if your administrator password is requested 
 
 
 ## References
