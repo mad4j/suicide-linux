@@ -11,7 +11,7 @@ Some of these commands need administration rights (e.g. sudo ...) to be executed
 > Most of the commands in this tutorial are **really dangerous**!!!
 DO NOT use these commands on a real system if you have no idea of what you are going to do.
 
-![Penguin](linux.png)
+<img src="linux.png" width=120/>
 
 #### :one: Wipeout!
 
