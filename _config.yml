@@ -2,7 +2,7 @@ title: Suicide-linux
 description: simple list of deadly linux commands
 google_analytics: 
 show_downloads: false
-theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
 
 gems:
   - jekyll-mentions
