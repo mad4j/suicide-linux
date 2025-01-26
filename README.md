@@ -71,6 +71,14 @@ This command will move all your personal data in the Linux equivalent of a Black
 
 The simplest way to freeze your system.
 
+#### :ten: Kill them all!
+
+`kill -9 -1`
+
+Remove any running process, including system processes.
+
+
+
 
 ## :pencil: Lessons Learned
 * execute commands with root privileges only if it is strictly necessary
