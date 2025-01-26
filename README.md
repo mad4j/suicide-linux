@@ -78,12 +78,10 @@ The simplest way to freeze your system.
 Remove any running process, including system processes.
 
 
-
-
 ## :pencil: Lessons Learned
 * execute commands with root privileges only if it is strictly necessary
 * beware from `rm -r` commands
-* never handle partions handles (such as `/dev/sda1`)
+* never mess with partions handles (such as `/dev/sda1`)
 * never execute untrusted content
 * there should be a good reason if your administrator password is requested 
 
