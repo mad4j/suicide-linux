@@ -3,7 +3,7 @@
 
 *Simple list of deadly linux commands. All the Linux that nobody will teach you, but that you will experience in first person. At least one time in your life.*
 
-by Daniele Olmisani, 2017
+by Daniele Olmisani, 2017-2025
 
 Some of these commands need administration rights (e.g. sudo ...) to be executed, some Linux distributions enforce specific protection mechanisms. So it is not so simple to destroy your Linux machine, but pay attention in any case. 
 
