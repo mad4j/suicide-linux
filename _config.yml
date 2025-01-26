@@ -4,6 +4,6 @@ google_analytics:
 show_downloads: false
 theme: jekyll-theme-slate
 
-gems:
+plugins:
   - jekyll-mentions
   - jemoji
