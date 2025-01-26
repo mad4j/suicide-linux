@@ -71,7 +71,7 @@ This command will move all your personal data in the Linux equivalent of a Black
 
 The simplest way to freeze your system.
 
-#### :ten: Kill them all!
+#### 🔟 Kill them all!
 
 `kill -9 -1`
 
